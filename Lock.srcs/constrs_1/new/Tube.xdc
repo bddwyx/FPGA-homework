@@ -10,6 +10,9 @@ set_property PACKAGE_PIN C2 [get_ports {led_bits[2]}]
 set_property PACKAGE_PIN C1 [get_ports {led_bits[1]}]
 set_property PACKAGE_PIN H1 [get_ports {led_bits[0]}]
 
+set_property PACKAGE_PIN P4 [get_ports {a}]
+set_property PACKAGE_PIN P5 [get_ports {b}]
+set_property PACKAGE_PIN F6 [get_ports {o}]
 
 set_property PACKAGE_PIN P17 [get_ports clk]
 set_property PACKAGE_PIN P15 [get_ports clr]
@@ -26,3 +29,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {led_bits[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led_bits[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports clr]
+
+set_property IOSTANDARD LVCMOS33 [get_ports a]
+set_property IOSTANDARD LVCMOS33 [get_ports b]
+set_property IOSTANDARD LVCMOS33 [get_ports o]

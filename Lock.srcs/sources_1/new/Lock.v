@@ -81,3 +81,12 @@ module Count_FFFF( //注释参考实验二
  D0_display myD0_display(.D0_bits(t_led_bits),.D0_NUM(num),.D0_a_to_g(a_to_g),.D0_led_bits(led_bits)) ; 
  
 endmodule
+
+
+module AND(
+    input a,
+    input b,
+    output o
+    );
+    assign o = a & b;
+endmodule
