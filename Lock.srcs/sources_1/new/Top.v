@@ -26,14 +26,19 @@ module Top(
     input [3:0] pwdReg,
     input [3:0] pwdInput,
     output [6:0] a_to_g ,
-    output [3:0] led_bits
+    output [3:0] led_bits ,
+    
+    input unlockKey
     );
+    
     Lock lock(
         .clk(clk),
         .clr(clr),
         .pwdReg(pwdReg),
         .pwdInput(pwdInput),
         .a_to_g(a_to_g),
-        .led_bits(led_bits)
+        .led_bits(led_bits),
+        
+        .unlockKey(unlockKey)
     );
 endmodule

@@ -44,3 +44,7 @@ set_property PACKAGE_PIN R2 [get_ports {pwdInput[3]}]
 set_property PACKAGE_PIN M4 [get_ports {pwdInput[2]}]
 set_property PACKAGE_PIN N4 [get_ports {pwdInput[1]}]
 set_property PACKAGE_PIN R1 [get_ports {pwdInput[0]}]
+
+
+set_property PACKAGE_PIN R15 [get_ports unlockKey]
+set_property IOSTANDARD LVCMOS33 [get_ports unlockKey]

@@ -39,10 +39,10 @@ module D0_display( //注释参考实验一
  7:D0_a_to_g=7'b1110000;
  8:D0_a_to_g=7'b1111111;
  9:D0_a_to_g=7'b1111011;
- 'hA: D0_a_to_g=7'b1110111;
+ 'hA: D0_a_to_g=7'b0000000;
  'hB: D0_a_to_g=7'b0011111;
  'hC: D0_a_to_g=7'b1001110;
- 'hD: D0_a_to_g=7'b0111101;
+ 'hD: D0_a_to_g=7'b1110110;
  'hE: D0_a_to_g=7'b1001111;
  'hF: D0_a_to_g=7'b1000111;
  default: D0_a_to_g=7'b1111110;
@@ -59,7 +59,7 @@ module DisplayTubes( //注释参考实验二
  );
  reg [35:0] ckl_cnt ;
  reg [3:0] t_led_bits ; //中间变量，存储数码管复用切换位控信息
- reg dataToShow ;
+ reg [3:0] dataToShow ;
 
  always@(posedge clk or posedge clr)
  begin

@@ -29,6 +29,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo e:/FPGA-homework/Lock.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  E:/FPGA-homework/Lock.srcs/sources_1/new/DisplayFSM.v
   E:/FPGA-homework/Lock.srcs/sources_1/new/Lock.v
   E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v
   E:/FPGA-homework/Lock.srcs/sources_1/new/Top.v
