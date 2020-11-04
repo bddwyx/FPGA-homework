@@ -31,6 +31,12 @@ module Top(
     input unlockKey
     );
     
+    wire displayFSM;
+    DisplayFSM FSM1(
+        .unlock(unlockKey)
+    );
+    assign displayFSM = FSM1.FSM;
+    
     Lock lock(
         .clk(clk),
         .clr(clr),
@@ -39,6 +45,6 @@ module Top(
         .a_to_g(a_to_g),
         .led_bits(led_bits),
         
-        .unlockKey(unlockKey)
+        .displayFSM(displayFSM)
     );
 endmodule

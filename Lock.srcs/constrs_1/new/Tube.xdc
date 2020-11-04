@@ -38,7 +38,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {pwdReg[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {pwdReg[0]}]
 set_property PACKAGE_PIN V4 [get_ports {pwdReg[3]}]
 set_property PACKAGE_PIN R3 [get_ports {pwdReg[2]}]
-set_property PACKAGE_PIN T4 [get_ports {pwdReg[1]}]
+set_property PACKAGE_PIN T3 [get_ports {pwdReg[1]}]
 set_property PACKAGE_PIN T5 [get_ports {pwdReg[0]}]
 set_property PACKAGE_PIN R2 [get_ports {pwdInput[3]}]
 set_property PACKAGE_PIN M4 [get_ports {pwdInput[2]}]
@@ -48,3 +48,5 @@ set_property PACKAGE_PIN R1 [get_ports {pwdInput[0]}]
 
 set_property PACKAGE_PIN R15 [get_ports unlockKey]
 set_property IOSTANDARD LVCMOS33 [get_ports unlockKey]
+
+

@@ -26,31 +26,32 @@ module Lock(
     output [6:0] a_to_g ,
     output [3:0] led_bits ,
     
-    input unlockKey
+    input displayFSM
     );
     
-    wire displayFSM;
     reg [15:0] infoBuf;
     
-    DisplayFSM FMS1(
-        .unlock(unlockKey)
-    );
-    assign displayFSM = FMS1.FSM;
-    
     always@(*) begin
-        if(displayFSM) begin
+        if(~displayFSM) begin
                 infoBuf[3:0] = pwdInput[0];
                 infoBuf[7:4] = pwdInput[1];
                 infoBuf[11:8] = pwdInput[2];
                 infoBuf[15:12] = pwdInput[3];
             end
         else begin
-                infoBuf[3:0] = 4'hF;
-                infoBuf[7:4] = 4'hF;
-                infoBuf[11:8] = 4'h0;
-                infoBuf[15:12] = 4'hA;
+                if(pwdInput == pwdReg) begin
+                        infoBuf[3:0] = 4'hD;
+                        infoBuf[7:4] = 4'h0;
+                        infoBuf[11:8] = 4'hA;
+                        infoBuf[15:12] = 4'hA;
+                    end
+                else begin
+                        infoBuf[3:0] = 4'hF;
+                        infoBuf[7:4] = 4'hF;
+                        infoBuf[11:8] = 4'h0;
+                        infoBuf[15:12] = 4'hA;
+                    end
             end    
-        //end
     end
     
     DisplayTubes displayPwd( //Show PassWord

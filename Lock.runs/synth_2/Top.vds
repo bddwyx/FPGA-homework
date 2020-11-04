@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Wed Nov  4 10:42:31 2020
-# Process ID: 10248
+# Start of session at: Wed Nov  4 11:17:03 2020
+# Process ID: 17812
 # Current directory: E:/FPGA-homework/Lock.runs/synth_2
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: E:/FPGA-homework/Lock.runs/synth_2/Top.vds
@@ -15,15 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19368 
+INFO: Helper process launched with PID 19548 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 336.027 ; gain = 93.453
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 336.492 ; gain = 94.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top' [E:/FPGA-homework/Lock.srcs/sources_1/new/Top.v:23]
-INFO: [Synth 8-638] synthesizing module 'Lock' [E:/FPGA-homework/Lock.srcs/sources_1/new/Lock.v:21]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/FPGA-homework/Lock.srcs/sources_1/new/Lock.v:35]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/FPGA-homework/Lock.srcs/sources_1/new/Top.v:35]
 INFO: [Synth 8-638] synthesizing module 'DisplayFSM' [E:/FPGA-homework/Lock.srcs/sources_1/new/DisplayFSM.v:23]
 INFO: [Synth 8-256] done synthesizing module 'DisplayFSM' (1#1) [E:/FPGA-homework/Lock.srcs/sources_1/new/DisplayFSM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Lock' [E:/FPGA-homework/Lock.srcs/sources_1/new/Lock.v:21]
 INFO: [Synth 8-638] synthesizing module 'DisplayTubes' [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:53]
 INFO: [Synth 8-638] synthesizing module 'D0_display' [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:22]
 INFO: [Synth 8-226] default block is never used [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:31]
@@ -31,12 +31,8 @@ INFO: [Synth 8-256] done synthesizing module 'D0_display' (2#1) [E:/FPGA-homewor
 INFO: [Synth 8-256] done synthesizing module 'DisplayTubes' (3#1) [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:53]
 INFO: [Synth 8-256] done synthesizing module 'Lock' (4#1) [E:/FPGA-homework/Lock.srcs/sources_1/new/Lock.v:21]
 INFO: [Synth 8-256] done synthesizing module 'Top' (5#1) [E:/FPGA-homework/Lock.srcs/sources_1/new/Top.v:23]
-WARNING: [Synth 8-3331] design Lock has unconnected port pwdReg[3]
-WARNING: [Synth 8-3331] design Lock has unconnected port pwdReg[2]
-WARNING: [Synth 8-3331] design Lock has unconnected port pwdReg[1]
-WARNING: [Synth 8-3331] design Lock has unconnected port pwdReg[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 378.109 ; gain = 135.535
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 377.949 ; gain = 135.484
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -45,8 +41,9 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin lock:displayFSM to constant 0 [E:/FPGA-homework/Lock.srcs/sources_1/new/Top.v:40]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 378.109 ; gain = 135.535
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 377.949 ; gain = 135.484
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a50tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -62,26 +59,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 668.305 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 674.164 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a50tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element ckl_cnt_reg was removed.  [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:67]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -94,7 +91,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -110,7 +107,7 @@ Detailed RTL Component Info :
 Module Lock 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -127,10 +124,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element lock/displayPwd/ckl_cnt_reg was removed.  [E:/FPGA-homework/Lock.srcs/sources_1/new/TubeDisplay.v:67]
-WARNING: [Synth 8-3331] design Top has unconnected port pwdReg[3]
-WARNING: [Synth 8-3331] design Top has unconnected port pwdReg[2]
-WARNING: [Synth 8-3331] design Top has unconnected port pwdReg[1]
-WARNING: [Synth 8-3331] design Top has unconnected port pwdReg[0]
 WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[16]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[17]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[18]) is unused and will be removed from module Top.
@@ -152,7 +145,7 @@ WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[33]) is 
 WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[34]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (lock/displayPwd/ckl_cnt_reg[35]) is unused and will be removed from module Top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -164,13 +157,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -182,7 +175,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -206,7 +199,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -219,7 +212,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -231,25 +224,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -272,9 +265,9 @@ Report Cell Usage:
 |5     |LUT3   |     1|
 |6     |LUT4   |     2|
 |7     |LUT5   |     1|
-|8     |LUT6   |     4|
+|8     |LUT6   |     3|
 |9     |FDCE   |    16|
-|10    |IBUF   |     7|
+|10    |IBUF   |    11|
 |11    |OBUF   |    11|
 +------+-------+------+
 
@@ -282,19 +275,19 @@ Report Instance Areas:
 +------+---------------+-------------+------+
 |      |Instance       |Module       |Cells |
 +------+---------------+-------------+------+
-|1     |top            |             |    53|
-|2     |  lock         |Lock         |    34|
-|3     |    FMS1       |DisplayFSM   |     0|
-|4     |    displayPwd |DisplayTubes |    34|
+|1     |top            |             |    56|
+|2     |  FSM1         |DisplayFSM   |     0|
+|3     |  lock         |Lock         |    31|
+|4     |    displayPwd |DisplayTubes |    31|
 +------+---------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 668.305 ; gain = 135.535
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 668.305 ; gain = 425.730
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 674.164 ; gain = 135.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 674.164 ; gain = 431.699
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -302,10 +295,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+23 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 670.230 ; gain = 432.797
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 674.164 ; gain = 436.953
 INFO: [Common 17-1381] The checkpoint 'E:/FPGA-homework/Lock.runs/synth_2/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 670.230 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 10:43:00 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 674.164 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 11:17:32 2020...
