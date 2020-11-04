@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a50tcsg324-1" LaunchTime="1604459821">
+<GenRun Id="impl_2" LaunchPart="xc7a50tcsg324-1" LaunchTime="1604461750">
   <File Type="PWROPT-DCP" Name="Top_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="Top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Top.tcl"/>
@@ -112,7 +112,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -121,6 +123,9 @@
     <Step Id="phys_opt_design"/>
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
-    <Step Id="write_bitstream"/>
+    <Step Id="write_bitstream">
+      <Option Id="RawbitFileBool">1</Option>
+      <Option Id="BinFile">1</Option>
+    </Step>
   </Strategy>
 </GenRun>

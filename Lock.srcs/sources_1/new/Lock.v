@@ -21,34 +21,49 @@
 module Lock(
     input clk,
     input clr,
-    input [3:0] pwdReg ,
-    input [3:0] pwdInput ,
+    input [7:0] pwdReg ,
+    input [7:0] pwdInput ,
     output [6:0] a_to_g ,
+    output [6:0] a_to_g2 ,
     output [3:0] led_bits ,
+    output [3:0] led_bits2 ,
     
     input displayFSM
     );
     
     reg [15:0] infoBuf;
+    reg [15:0] infoBuf2;
     
     always@(*) begin
         if(~displayFSM) begin
-                infoBuf[3:0] = pwdInput[0];
-                infoBuf[7:4] = pwdInput[1];
-                infoBuf[11:8] = pwdInput[2];
-                infoBuf[15:12] = pwdInput[3];
+                infoBuf2[3:0] = pwdInput[0];
+                infoBuf2[7:4] = pwdInput[1];
+                infoBuf2[11:8] = pwdInput[2];
+                infoBuf2[15:12] = pwdInput[3];
+                infoBuf[3:0] = pwdInput[4];
+                infoBuf[7:4] = pwdInput[5];
+                infoBuf[11:8] = pwdInput[6];
+                infoBuf[15:12] = pwdInput[7];
             end
         else begin
                 if(pwdInput == pwdReg) begin
-                        infoBuf[3:0] = 4'hD;
-                        infoBuf[7:4] = 4'h0;
+                        infoBuf2[3:0] = 4'hD;
+                        infoBuf2[7:4] = 4'h0;
+                        infoBuf2[11:8] = 4'hA;
+                        infoBuf2[15:12] = 4'hA;
+                        infoBuf[3:0] = 4'hA;
+                        infoBuf[7:4] = 4'hA;
                         infoBuf[11:8] = 4'hA;
                         infoBuf[15:12] = 4'hA;
                     end
                 else begin
-                        infoBuf[3:0] = 4'hF;
-                        infoBuf[7:4] = 4'hF;
-                        infoBuf[11:8] = 4'h0;
+                        infoBuf2[3:0] = 4'hF;
+                        infoBuf2[7:4] = 4'hF;
+                        infoBuf2[11:8] = 4'h0;
+                        infoBuf2[15:12] = 4'hA;
+                        infoBuf[3:0] = 4'hA;
+                        infoBuf[7:4] = 4'hA;
+                        infoBuf[11:8] = 4'hA;
                         infoBuf[15:12] = 4'hA;
                     end
             end    
@@ -61,4 +76,11 @@ module Lock(
              .a_to_g(a_to_g),
              .led_bits(led_bits)
      );
+     DisplayTubes displayPwd2( //Show PassWord
+          .clk(clk),
+          .clr(clr),
+          .dataBuf(infoBuf2),
+          .a_to_g(a_to_g2),
+          .led_bits(led_bits2)
+      );
 endmodule

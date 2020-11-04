@@ -23,10 +23,12 @@
 module Top(
     input clk,
     input clr,
-    input [3:0] pwdReg,
-    input [3:0] pwdInput,
+    input [7:0] pwdReg,
+    input [7:0] pwdInput,
     output [6:0] a_to_g ,
+    output [6:0] a_to_g2 ,
     output [3:0] led_bits ,
+    output [3:0] led_bits2 ,
     
     input unlockKey
     );
@@ -43,7 +45,9 @@ module Top(
         .pwdReg(pwdReg),
         .pwdInput(pwdInput),
         .a_to_g(a_to_g),
+        .a_to_g2(a_to_g2),
         .led_bits(led_bits),
+        .led_bits2(led_bits2),
         
         .displayFSM(displayFSM)
     );

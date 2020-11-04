@@ -152,7 +152,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   catch { write_mem_info -force Top.mmi }
-  write_bitstream -force Top.bit 
+  write_bitstream -force Top.bit -raw_bitfile -bin_file
   catch {write_debug_probes -quiet -force Top}
   catch {file copy -force Top.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb

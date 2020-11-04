@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a50tcsg324-1" LaunchTime="1604452584">
-  <File Type="PWROPT-DCP" Name="Count_FFFF_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="Count_FFFF_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Count_FFFF.tcl"/>
+  <File Type="PWROPT-DCP" Name="Count_FFFF_pwropt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Count_FFFF_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Count_FFFF_reports.tcl"/>
   <File Type="BG-DRC" Name="Count_FFFF.drc"/>
-  <File Type="OPT-DCP" Name="Count_FFFF_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="Count_FFFF.hwdef"/>
+  <File Type="OPT-DCP" Name="Count_FFFF_opt.dcp"/>
   <File Type="OPT-DRC" Name="Count_FFFF_drc_opted.rpt"/>
   <File Type="PLACE-DCP" Name="Count_FFFF_placed.dcp"/>
   <File Type="PLACE-IO" Name="Count_FFFF_io_placed.rpt"/>
@@ -23,22 +23,22 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="Count_FFFF_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Count_FFFF_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Count_FFFF_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="Count_FFFF.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="Count_FFFF_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="Count_FFFF.bgn"/>
+  <File Type="BITSTR-MSK" Name="Count_FFFF.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Count_FFFF_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="Count_FFFF.rbt"/>
+  <File Type="BG-BGN" Name="Count_FFFF.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Count_FFFF_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="Count_FFFF.bin"/>
+  <File Type="BITSTR-RBT" Name="Count_FFFF.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Count_FFFF_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="Count_FFFF.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="Count_FFFF_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Count_FFFF_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Count_FFFF_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Count_FFFF_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Count_FFFF_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Count_FFFF_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="Count_FFFF.vdi"/>
   <File Type="ROUTE-CLK" Name="Count_FFFF_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Count_FFFF.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Count_FFFF_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Count_FFFF_postroute_physopt_bb.dcp"/>
   <File Type="BITSTR-NKY" Name="Count_FFFF.nky"/>
