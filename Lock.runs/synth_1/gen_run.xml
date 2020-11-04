@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50tcsg324-1" LaunchTime="1604415864">
+<GenRun Id="synth_1" LaunchPart="xc7a50tcsg324-1" LaunchTime="1604452584">
   <File Type="PA-TCL" Name="Count_FFFF.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Count_FFFF_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Count_FFFF_reports.tcl"/>
@@ -13,6 +13,22 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Lock.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TubeDisplay.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
