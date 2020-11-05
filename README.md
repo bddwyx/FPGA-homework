@@ -38,6 +38,10 @@
 
 ## 流程框图
 
+<div style="align: center">
+<img src="https://github.com/bddwyx/FPGA-homework/blob/main/images/FPGA.png" width = 30% height = 30% />
+</div>
+
 ## top模块
 
 ​	top模块为最终生成比特流所用模块。该模块由两部分组成，分别为输入状态机切换与状态机执行，对应米勒状态机的状态转移逻辑和输出逻辑。状态寄存器写在了FSM模块中，以reg形式存在。状态机共设计了两种状态，分别对应输入显示与解锁。top模块的代码如下。
@@ -368,5 +372,7 @@ always @(*) begin
     else D0_a_to_g = 7'b000_0000;
 end
 ```
+
+<img src="https://github.com/bddwyx/FPGA-homework/blob/main/images/FPGA2.png" width = 30% height = 30% align=center />
 
 ~~赶作业的体验极为不爽，下次一定要记得提前做大作业。~~
