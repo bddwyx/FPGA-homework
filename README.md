@@ -1,5 +1,4 @@
-
-
+[toc]
 # 开源信息
 
 ## 链接
@@ -88,6 +87,9 @@ endmodule
 <div style="align: center">
 <img src="https://github.com/bddwyx/FPGA-homework/blob/main/images/FPGA.png" width = 30% height = 30% />
 </div>
+
+## 项目管理
+​	项目采用多文件的结构，实现相近功能的模块归为同一.v文件，由top模块统一调用。项目整体采用git管理，当安排新的模块测试时，新建branch并push到相应branch上；测试全部结束后，发起pull request从而merge进main分支。
 
 # 模块分析
 
