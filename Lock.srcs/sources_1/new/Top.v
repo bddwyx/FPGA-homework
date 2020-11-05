@@ -45,7 +45,7 @@ module Top(
     Lock lock(
         .clk(clk),
         .clr(clr),
-        .pwdReg(pwdReg),
+        .pwdInit(pwdReg),
         .pwdInput(pwdInput),
         .a_to_g(a_to_g),
         .a_to_g2(a_to_g2),

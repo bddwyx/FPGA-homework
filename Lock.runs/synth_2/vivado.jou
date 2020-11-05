@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Nov  5 10:04:51 2020
-# Process ID: 14912
+# Start of session at: Thu Nov  5 10:53:51 2020
+# Process ID: 8176
 # Current directory: E:/FPGA-homework/Lock.runs/synth_2
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: E:/FPGA-homework/Lock.runs/synth_2/Top.vds

@@ -21,7 +21,7 @@
 module Lock(
     input clk,
     input clr,
-    input [7:0] pwdReg ,
+    input [7:0] pwdInit ,
     input [7:0] pwdInput ,
     output [6:0] a_to_g ,
     output [6:0] a_to_g2 ,
@@ -36,6 +36,9 @@ module Lock(
     reg [15:0] infoBuf;
     reg [15:0] infoBuf2;
     
+    wire [7:0] Pwd;
+    assign Pwd = resetKey ? 8'h0 : pwdInit;
+    
     always@(*) begin
         if(~displayFSM) begin
                 infoBuf2[3:0] = pwdInput[0];
@@ -48,7 +51,7 @@ module Lock(
                 infoBuf[15:12] = pwdInput[7];
             end
         else begin
-                if(pwdInput == pwdReg) begin
+                if(pwdInput == Pwd) begin
                         infoBuf2[3:0] = 4'hD;
                         infoBuf2[7:4] = 4'h0;
                         infoBuf2[11:8] = 4'hA;

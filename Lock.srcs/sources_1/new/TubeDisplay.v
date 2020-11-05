@@ -38,10 +38,10 @@ module D0_display( //One bit display
              7:D0_a_to_g=7'b1110000;
              8:D0_a_to_g=7'b1111111;
              9:D0_a_to_g=7'b1111011;
-             'hA: D0_a_to_g=7'b0000000;
+             'hA: D0_a_to_g=7'b0000000; //Turn off
              'hB: D0_a_to_g=7'b0011111;
              'hC: D0_a_to_g=7'b1001110;
-             'hD: D0_a_to_g=7'b1110110;
+             'hD: D0_a_to_g=7'b1110110; //'N'
              'hE: D0_a_to_g=7'b1001111;
              'hF: D0_a_to_g=7'b1000111;
              default: D0_a_to_g=7'b1111110;
@@ -49,7 +49,7 @@ module D0_display( //One bit display
      end
 endmodule
 
-module DisplayTubes( //注释参考实验二
+module DisplayTubes( //Four bit display
      input clk,
      input clr,
      input [15:0] dataBuf,
@@ -57,7 +57,7 @@ module DisplayTubes( //注释参考实验二
      output [3:0] led_bits
 );
      reg [35:0] ckl_cnt ;
-     reg [3:0] t_led_bits ; //中间变量，存储数码管复用切换位控信息
+     reg [3:0] t_led_bits ; //bit control
      reg [3:0] dataToShow ;
 
  always@(posedge clk or posedge clr) begin

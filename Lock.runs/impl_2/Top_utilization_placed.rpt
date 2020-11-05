@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Thu Nov  5 10:05:49 2020
+| Date         : Thu Nov  5 10:54:48 2020
 | Host         : LAPTOP-1IG6RVMR running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_utilization_placed.rpt -pb Top_utilization_placed.pb
 | Design       : Top
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              |   13 |     0 |     32600 |  0.04 |
-|   LUT as Logic          |   13 |     0 |     32600 |  0.04 |
+| Slice LUTs              |   15 |     0 |     32600 |  0.05 |
+|   LUT as Logic          |   15 |     0 |     32600 |  0.05 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |   16 |     0 |     65200 |  0.02 |
 |   Register as Flip Flop |   16 |     0 |     65200 |  0.02 |
@@ -68,11 +68,11 @@ Table of Contents
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
 | Slice                                     |   12 |     0 |      8150 |  0.15 |
-|   SLICEL                                  |    8 |     0 |           |       |
-|   SLICEM                                  |    4 |     0 |           |       |
-| LUT as Logic                              |   13 |     0 |     32600 |  0.04 |
+|   SLICEL                                  |    6 |     0 |           |       |
+|   SLICEM                                  |    6 |     0 |           |       |
+| LUT as Logic                              |   15 |     0 |     32600 |  0.05 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    |    9 |       |           |       |
+|   using O6 output only                    |   11 |       |           |       |
 |   using O5 and O6                         |    4 |       |           |       |
 | LUT as Memory                             |    0 |     0 |      9600 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
@@ -176,12 +176,12 @@ Table of Contents
 | OBUF     |   24 |                  IO |
 | IBUF     |   21 |                  IO |
 | FDCE     |   16 |        Flop & Latch |
-| LUT6     |    6 |                 LUT |
+| LUT5     |    6 |                 LUT |
 | LUT2     |    4 |                 LUT |
 | CARRY4   |    4 |          CarryLogic |
+| LUT6     |    3 |                 LUT |
 | LUT1     |    3 |                 LUT |
-| LUT5     |    2 |                 LUT |
-| LUT4     |    1 |                 LUT |
+| LUT4     |    2 |                 LUT |
 | LUT3     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
