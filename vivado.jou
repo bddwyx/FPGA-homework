@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov  5 09:28:03 2020
+# Process ID: 16492
+# Current directory: E:/FPGA-homework
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3780 E:\FPGA-homework\Lock.xpr
+# Log file: E:/FPGA-homework/vivado.log
+# Journal file: E:/FPGA-homework\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA-homework/Lock.xpr
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+open_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+set_property IOSTANDARD LVCMOS25 [get_ports [list {led[1]} {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]} {led[0]}]]
+place_ports {led[1]} J2
+place_ports {led[0]} K2
+set_property IOSTANDARD LVCMOS33 [get_ports [list changeKey]]
+place_ports changeKey R17
+save_constraints
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list resetKey]]
+place_ports resetKey U4
+save_constraints -force
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+refresh_design
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+write_schematic -format pdf -orientation portrait E:/FPGA-homework/Lock.runs/impl_2/schematic.pdf
