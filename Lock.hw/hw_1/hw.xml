@@ -22,9 +22,9 @@
     <Object name="xc7a50t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_2/Top.bin"/>
       <Properties Property="PROGRAM.HW_CFGMEM_PART" value="n25q64-3.3v-spi-x1_x2_x4"/>
-      <Properties Property="SLR.COUNT" value="C:/Users/bddwy/AppData/Roaming/Xilinx/Vivado/1"/>
+      <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

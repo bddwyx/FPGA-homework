@@ -30,7 +30,10 @@ module Top(
     output [3:0] led_bits ,
     output [3:0] led_bits2 ,
     
-    input unlockKey
+    input unlockKey,
+    input changeKey,
+    input resetKey,
+    output [1:0] led
     );
     
     wire displayFSM;
@@ -49,6 +52,11 @@ module Top(
         .led_bits(led_bits),
         .led_bits2(led_bits2),
         
-        .displayFSM(displayFSM)
+        .displayFSM(displayFSM),
+        .changeKey(changeKey),
+        .resetKey(resetKey)
     );
+    
+    assign led[0] = changeKey;
+    assign led[1] = resetKey;  
 endmodule

@@ -1,0 +1,205 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov  5 09:28:03 2020
+# Process ID: 16492
+# Current directory: E:/FPGA-homework
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3780 E:\FPGA-homework\Lock.xpr
+# Log file: E:/FPGA-homework/vivado.log
+# Journal file: E:/FPGA-homework\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA-homework/Lock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2017.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+[Thu Nov  5 09:28:24 2020] Launched synth_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/synth_2/runme.log
+[Thu Nov  5 09:28:24 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp1/Top.xdc]
+Finished Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp1/Top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1131.801 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1131.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1267.973 ; gain = 271.230
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Thu Nov  5 09:30:25 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.3
+  **** Build date : Oct  4 2017-20:12:17
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bit} [get_hw_devices xc7a50t_0]
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+[Thu Nov  5 09:33:39 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+refresh_design
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp7/Top.xdc]
+Finished Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp7/Top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2256.043 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2256.043 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+[Thu Nov  5 09:37:19 2020] Launched synth_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/synth_2/runme.log
+[Thu Nov  5 09:37:19 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp9/Top.xdc]
+Finished Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp9/Top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2275.605 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2275.605 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS25 [get_ports [list {led[1]} {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]} {led[0]}]]
+place_ports {led[1]} J2
+place_ports {led[0]} K2
+set_property IOSTANDARD LVCMOS33 [get_ports [list changeKey]]
+place_ports changeKey R17
+save_constraints
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Thu Nov  5 09:40:03 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+[Thu Nov  5 09:50:19 2020] Launched synth_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 8
+[Thu Nov  5 09:53:20 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+[Thu Nov  5 10:01:36 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp23/Top.xdc]
+Finished Parsing XDC File [E:/FPGA-homework/.Xil/Vivado-16492-LAPTOP-1IG6RVMR/dcp23/Top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2323.273 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2323.273 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2323.273 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list resetKey]]
+place_ports resetKey U4
+save_constraints -force
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Thu Nov  5 10:03:22 2020] Launched synth_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/synth_2/runme.log
+[Thu Nov  5 10:03:22 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Thu Nov  5 10:04:49 2020] Launched synth_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/synth_2/runme.log
+[Thu Nov  5 10:04:49 2020] Launched impl_2...
+Run output will be captured here: E:/FPGA-homework/Lock.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a50t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

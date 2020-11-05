@@ -90,3 +90,15 @@ set_property PACKAGE_PIN U3 [get_ports {pwdReg[7]}]
 set_property PACKAGE_PIN U2 [get_ports {pwdReg[6]}]
 set_property PACKAGE_PIN V2 [get_ports {pwdReg[5]}]
 set_property PACKAGE_PIN V5 [get_ports {pwdReg[4]}]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+set_property PACKAGE_PIN J2 [get_ports {led[1]}]
+set_property PACKAGE_PIN K2 [get_ports {led[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports changeKey]
+set_property PACKAGE_PIN R17 [get_ports changeKey]
+
+
+set_property IOSTANDARD LVCMOS33 [get_ports resetKey]
+set_property PACKAGE_PIN U4 [get_ports resetKey]

@@ -28,7 +28,9 @@ module Lock(
     output [3:0] led_bits ,
     output [3:0] led_bits2 ,
     
-    input displayFSM
+    input displayFSM,
+    input changeKey,
+    input resetKey
     );
     
     reg [15:0] infoBuf;
@@ -83,4 +85,5 @@ module Lock(
           .a_to_g(a_to_g2),
           .led_bits(led_bits2)
       );
+
 endmodule
