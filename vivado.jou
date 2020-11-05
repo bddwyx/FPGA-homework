@@ -76,3 +76,119 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
 set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
 program_hw_devices [get_hw_devices xc7a50t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+refresh_design
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+launch_runs impl_2 -jobs 8
+wait_on_run impl_2
+refresh_design
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {E:/FPGA-homework/Lock.runs/impl_2/Top.bin} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+write_schematic -format pdf -orientation portrait E:/FPGA-homework/Lock.runs/impl_2/schematic.pdf

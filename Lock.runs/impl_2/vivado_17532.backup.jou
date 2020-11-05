@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov  5 11:18:43 2020
+# Process ID: 17532
+# Current directory: E:/FPGA-homework/Lock.runs/impl_2
+# Command line: vivado.exe -log Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
+# Log file: E:/FPGA-homework/Lock.runs/impl_2/Top.vdi
+# Journal file: E:/FPGA-homework/Lock.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
